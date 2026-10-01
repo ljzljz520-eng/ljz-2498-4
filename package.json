@@ -1,0 +1,16 @@
+{
+  "name": "cv-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": ["shared", "server", "web"],
+  "scripts": {
+    "build:web": "npm run build --workspace web",
+    "dev": "node server/src/index.js",
+    "start": "node server/src/index.js",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
